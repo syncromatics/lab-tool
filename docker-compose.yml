@@ -1,0 +1,9 @@
+version: "2"
+
+services:
+  dnsmasq:
+    build: ./dnsmasq
+    privileged: true
+    network_mode: "host"
+    cap_add:
+      - NET_ADMIN
